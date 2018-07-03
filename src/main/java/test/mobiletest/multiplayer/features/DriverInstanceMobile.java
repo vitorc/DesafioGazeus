@@ -1,4 +1,4 @@
-package test.mobiletest.cucumber.features;
+package test.mobiletest.multiplayer.features;
 
 
 import io.appium.java_client.android.AndroidDriver;

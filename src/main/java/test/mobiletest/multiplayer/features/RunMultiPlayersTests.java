@@ -1,4 +1,4 @@
-package test.mobiletest.cucumber.features;
+package test.mobiletest.multiplayer.features;
 
         import cucumber.api.CucumberOptions;
         import cucumber.api.junit.Cucumber;
@@ -6,7 +6,7 @@ package test.mobiletest.cucumber.features;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(format = {"pretty", "html:target/Destination/mobile"},
-        features = {"target/classes/test/mobileTest/cucumber/features"})
-public class RunTests {
+        features = {"target/classes/test/mobileTest/multiplayer/features"})
+public class RunMultiPlayersTests {
 
 }
