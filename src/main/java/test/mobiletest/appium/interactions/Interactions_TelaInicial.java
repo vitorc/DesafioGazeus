@@ -1,4 +1,4 @@
-package test.mobiletest.appium.interactions;
+/*package test.mobiletest.appium.interactions;
 
 
 import org.openqa.selenium.WebElement;
@@ -7,7 +7,7 @@ import test.mobiletest.appium.pageObjects.PageObjects_MainScreen;
 /**
  * Created by Vitor Cardoso on 25/07/2016.
  */
-public class Interactions_TelaInicial extends PageObjects_MainScreen {
+/*public class Interactions_TelaInicial extends PageObjects_MainScreen {
 
     public void pressionarBtnSelecionarEstado()
     {
@@ -44,4 +44,4 @@ public class Interactions_TelaInicial extends PageObjects_MainScreen {
 
     }
 
-}
+}*/

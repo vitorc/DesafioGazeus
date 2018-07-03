@@ -9,22 +9,42 @@ import org.openqa.selenium.support.FindBy;
  */
 public class PageObjects_MainScreen {
 
+
+    public static final String IDBTNSINGLEPLAYER= "com.jogatina.buraco:id/buttonSingleplayer";
+    public static final String IDBTNMULTIPLAYER = "com.jogatina.buraco:id/buttonMultiplayer";
+    public static final String IDBTNACCESSVIP = "com.jogatina.buraco:id/buttonMultiplayer";
+    public static final String IDBTNCLOSEVIP = "com.jogatina.buraco:id/buttonClose";
+    public static final String IDBTNINVATEFRIENDS = "com.jogatina.buraco:id/buttonInviteFriends";
+    public static final String IDBTNACHIEVEMENTS = "com.jogatina.buraco:id/buttonAchievements";
+    public static final String IDBTNSETTINGS = "com.jogatina.buraco:id/buttonSettings";
     public static final String IDSELECIONARESTADO = "com.schibsted.bomnegocio.androidApp:id/fragment_automatic_" +
             "location_manual_button";
-    public static final String XPATHRIODEJANEIRO = "//android.widget.TextView[@text='Rio de Janeiro']";
-    public static final String XPATHDDD21 = "//android.widget.TextView[@text='DDD 21 - Rio de Janeiro e região']";
-    public static final String XPATHLISTAREGIAO = "//android.widget.TextView[@text='Região']";
 
-    @FindBy(id = IDSELECIONARESTADO)
-    protected WebElement btnSelecionarEstado;
+    @FindBy(id=IDBTNSINGLEPLAYER)
+    protected  WebElement btnSinglePlayer;
 
-    @FindBy(xpath = XPATHRIODEJANEIRO)
-    protected WebElement btnSelecionarEstadoRiodeJaneiro;
+    @FindBy(id=IDBTNMULTIPLAYER)
+    protected  WebElement btnMultiPlayer;
 
-    @FindBy(xpath = XPATHDDD21)
-    protected WebElement btnSelecionarDDD21;
+    @FindBy(id=IDBTNACCESSVIP)
+    protected  WebElement btnAccessVip;
 
-    @FindBy(xpath = XPATHLISTAREGIAO)
-    protected WebElement lblRegiaoEstados;
+    @FindBy(id=IDBTNCLOSEVIP)
+    protected  WebElement btnCloseVip;
+
+    @FindBy(id=IDBTNINVATEFRIENDS)
+    protected  WebElement btnInvateFriends;
+
+    @FindBy(id=IDBTNACHIEVEMENTS)
+    protected  WebElement btnAchievements;
+
+    @FindBy(id=IDBTNSETTINGS)
+    protected  WebElement btnSettings;
+
+
+
+
+
+
 
 }

@@ -6,7 +6,6 @@ import io.appium.java_client.android.AndroidDriver;
 import org.openqa.selenium.support.PageFactory;
 import test.mobiletest.appium.commonMethods.CommonPageObjects;
 import test.mobiletest.appium.interactions.Interactions_MainScreen;
-import test.mobiletest.appium.interactions.Interactions_TelaInicial;
 import test.mobiletest.appium.pageObjects.PageObjects_MainScreen;
 
 import java.net.MalformedURLException;
@@ -20,7 +19,6 @@ public class Step_MultiPlayerGame extends  DriverInstanceMobile{
 
     private AndroidDriver driver = instanceMobile();
     CommonPageObjects common = new CommonPageObjects(driver);
-    Interactions_TelaInicial paginaInicial = PageFactory.initElements(driver, Interactions_TelaInicial.class);
     Interactions_MainScreen paginabusca = PageFactory.initElements(driver, Interactions_MainScreen.class);
 
     @Dado("^que o botao jogar esteja visivel na tela do aplicativo$")
