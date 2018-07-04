@@ -1,5 +1,5 @@
 Desafio Gazeus
-=========================
+
 Objetivo
 Verificar suas habilidades em definir cenários de testes necessárias para automatização dos testes.
 
@@ -48,28 +48,28 @@ Pré-Requisito para execução dos testes
 
 
 3 - Criar a váriável de ambiente JAVA_HOME apontando para o caminho de instalação do JDK, exempo: JAVA_HOME: C:\Program Files\Java\jdk1.8.0_91\bin;
-=========================
+
 
 4 - Realizar Download e instalar o Android SDK;
-=========================
+
 
 5 - Criar a váriavel de ambiente do ANDROID_HOME;
-=========================
+
 
 6 - Acessar o SDK Manager na pasta de instalação do passo 4 e atualizar o Android;
-========================= 6.1 Abrir o SDK Manager;
+6.1 Abrir o SDK Manager;
 6.2 Selecionar as opções 
-=========================
+
 6.2.1 Ramificação Tools: Android SDK Tool, Android SDK Platform-tools e Android SDK Build-tools (desmarcar todas as outras opções desta ramificação Tools);
 6.2.2 Ramificação Android 4.4.2 (API 19) : SDK Platform e ARM EABI v7a System Image;
-=========================
+
 6.2.3 Selecionar o botão Install packages;
 7 - Realizar o download e instalar o Appium (http://appium.io/);
-=========================
+
 
 8 - Na pasta de instalação do Android SDK, acessar o AVD Manager;
-8.1 Criar o dispositivo virutal do Android com as seguintes configurações
-=========================
+8.1 Criar o dispostivo virtual do Android com as seguintes configurações
+
 
 AVD NAME: Nexus
 DEVICE: Nexus 4
