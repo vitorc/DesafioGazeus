@@ -77,4 +77,4 @@ TARGET: Android 4.4.2 - API Level 19
 CPU/ABI:ARM(armeabi-v7a)
 Memory RAM: 2048
 Internal Storage: 512
-=========================
+
