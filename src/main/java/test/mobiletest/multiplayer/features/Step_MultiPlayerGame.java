@@ -5,6 +5,7 @@ import cucumber.api.java.pt.Entao;
 import cucumber.api.java.pt.Quando;
 import io.appium.java_client.NetworkConnectionSetting;
 import io.appium.java_client.android.AndroidDriver;
+import io.appium.java_client.android.AndroidKeyCode;
 import org.openqa.selenium.support.PageFactory;
 import test.mobiletest.appium.commonMethods.CommonPageObjects;
 import test.mobiletest.appium.interactions.Interactions_Game;
@@ -51,17 +52,24 @@ public class Step_MultiPlayerGame extends  DriverInstanceMobile{
         game.acessarComoConvidado();
     }
 
-   /* @Quando("^eu escolho o tipo de buraco: Buraco aberto$")
+   @Quando("^eu escolho o tipo de buraco: Buraco aberto$")
     public void eu_escolho_o_tipo_de_buraco_Buraco_aberto() {
         common.aguardarElementoById(PageObjects_Game.IDBTNBURACOABERTO);
         game.acessarBuracoAberto();
-    }*/
+    }
 
     @Quando("^eu escolho a sala com dois jogadores$")
     public void eu_escolho_a_sala_com_dois_jogadores() {
         common.aguardarElementoById(PageObjects_Game.IDBTNTWOPLAYERS);
         game.selecionarQuantidadeJogadores();
 
+    }
+
+    @Quando("^eu saio da tela de tutorial$")
+    public void eu_saio_da_tela_de_tutorial() {
+        driver.sendKeyEvent(AndroidKeyCode.BACK);
+        common.aguardarElementoByXpath(PageObjects_Game.XPATHSAIRTUTORIAL);
+        game.sairTutorial();
     }
 
     @Quando("^ocorre uma queda de conexao da internet durante a partida$")
@@ -72,18 +80,19 @@ public class Step_MultiPlayerGame extends  DriverInstanceMobile{
 
     @Entao("^o sistema exibe mensagem informando que houve um problema$")
     public void o_sistema_exibe_mensagem_informando_que_houve_um_problema() {
-        game.mensagemPerdaConexao();
+        common.aguardarElementoByXpath(PageObjects_Game.XPATHTEXTLOSTCONNECTION);
+        game.mensagemPerdaConexao("A conexão com o servidor foi perdida. Por favor, entre novamente");
     }
 
     @Entao("^eu devo confirmar a mensagem$")
     public void eu_devo_confirmar_a_mensagem(){
         common.aguardarElementoById(PageObjects_Game.IDBTNOKLOSTCONNECTION);
-        game.ConfirmarPerdaConexao();
+        game.confirmarPerdaConexao();
     }
 
-    @Entao("^o sistema retorna para a tela inicial$")
-    public void o_sistema_retorna_para_a_tela_inicial() {
-        common.aguardarElementoById(PageObjects_MainScreen.IDBTNMULTIPLAYER);
+    @Entao("^o sistema retorna para a tela Escolha o tipo de buraco$")
+    public void o_sistema_retorna_para_a_tela_Escolha_o_tipo_de_buraco() {
+        common.aguardarElementoById(PageObjects_Game.IDBTNBURACOABERTO);
     }
 
 }

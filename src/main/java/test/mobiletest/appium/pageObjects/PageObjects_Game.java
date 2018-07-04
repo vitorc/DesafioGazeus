@@ -17,9 +17,10 @@ public class PageObjects_Game {
     public static final String IDBTNLOGINORSIGNUP = "com.jogatina.buraco:id/loginOrSignup";
     public static final String XPATHTEXTLOSTCONNECTION = "//android.widget.TextView[@text='A conexão com o servidor foi perdida. Por favor, entre novamente']";
     public static final String IDBTNOKLOSTCONNECTION = "com.jogatina.buraco:id/dialog_button";
+    public static final String XPATHSAIRTUTORIAL = "//android.widget.LinearLayout[@class='android.widget.LinearLayout']/android.widget.Button[1]";
+	public static final String XPATHCLOSEPOPUP = "//android.widget.RelativeLayout[@class='android.widget.RelativeLayout']/android.widget.Button[0]";
 
-
-    @FindBy(xpath = IDBTNBURACOABERTO)
+    @FindBy(id = IDBTNBURACOABERTO)
     protected WebElement bntBuracoAberto;
 
     @FindBy(id = IDBTNBURACOFECHADO)
@@ -54,6 +55,12 @@ public class PageObjects_Game {
 
     @FindBy(xpath = XPATHLOADTEXTVIEWGUEST)
     protected WebElement textLoadViewGuest;
+
+    @FindBy(xpath = XPATHSAIRTUTORIAL)
+    protected WebElement btnSairTutorial;
+	
+	@FindBy(xpath = XPATHCLOSEPOPUP)
+    protected WebElement btnClosePopup;
 
 }
 

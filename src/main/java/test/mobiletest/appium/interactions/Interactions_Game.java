@@ -1,5 +1,6 @@
 package test.mobiletest.appium.interactions;
 
+import org.junit.Assert;
 import test.mobiletest.appium.pageObjects.PageObjects_Game;
 
 public class Interactions_Game extends PageObjects_Game {
@@ -14,16 +15,16 @@ public class Interactions_Game extends PageObjects_Game {
         btnTwoPlayers.click();
         }
 
-        public void mensagemPerdaConexao(){
-        String teste = textLostConnection.getText();
-           try{
-               teste.equals("A conexão com o servidor foi perdida. Por favor, entre novamente");
-           } catch (Exception e){
-               e.getMessage();
-           }
+        public void mensagemPerdaConexao(String msg) {
+
+            Assert.assertEquals(msg, textLostConnection.getText());
         }
 
-        public void ConfirmarPerdaConexao(){
+        public void confirmarPerdaConexao(){
             btnOKLostConnection.click();
         }
+
+        public void sairTutorial(){
+        btnSairTutorial.click();
+    }
 }

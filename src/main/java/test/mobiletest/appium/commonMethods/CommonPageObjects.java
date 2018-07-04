@@ -47,7 +47,7 @@ public class CommonPageObjects {
     private WebElement fluentWait(WebElement button) {
 
         new FluentWait<WebElement>(button)
-                .withTimeout(20, TimeUnit.SECONDS)
+                .withTimeout(180, TimeUnit.SECONDS)
                 .pollingEvery(1, TimeUnit.SECONDS)
                 .ignoring(NoSuchElementException.class)
                 .ignoring(TimeoutException.class)
@@ -69,7 +69,7 @@ public class CommonPageObjects {
 
     public void aguardarElementoById(String locator) {
 
-        WebDriverWait wait = new WebDriverWait(driver, 30);
+        WebDriverWait wait = new WebDriverWait(driver, 180);
         wait.until(ExpectedConditions.presenceOfElementLocated(By
 
                 .id(locator)));
