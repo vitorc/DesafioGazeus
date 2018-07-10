@@ -1,6 +1,6 @@
 # language: pt
 
-  Funcionalidade: Testar falha de conexão durante uma partida multiplayer de buraco aberto
+ Funcionalidade: Testar falha de conexão durante uma partida multiplayer de buraco aberto
 
   Cenário: Acessar a sala multiplayer dois jogadores na modalidade buraco aberto e ocorrer perda de conexao durante a partida
     Dado que estou na tela VIP

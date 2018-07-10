@@ -61,7 +61,7 @@ public class CommonPageObjects {
 
     public void aguardarElementoByXpath(String locator) {
 
-        WebDriverWait wait = new WebDriverWait(driver, 30);
+        WebDriverWait wait = new WebDriverWait(driver, 180);
         wait.until(ExpectedConditions.presenceOfElementLocated(By
 
                 .xpath(locator)));
@@ -77,7 +77,7 @@ public class CommonPageObjects {
 
     public void aguardarElementoByCssSelector(String locator) {
 
-        WebDriverWait wait = new WebDriverWait(driver, 30);
+        WebDriverWait wait = new WebDriverWait(driver, 180);
         wait.until(ExpectedConditions.presenceOfElementLocated(By
 
                 .cssSelector(locator)));
