@@ -67,8 +67,7 @@ Pré-Requisito para execução dos testes
 7 - Realizar o download e instalar o Appium (http://appium.io/);
 
 
-8 - Na pasta de instalação do Android SDK, acessar o AVD Manager;
-8.1 Criar o dispostivo virtual do Android com as seguintes configurações
+8 - No Genymotion criar um dispositivo virtual com as seguintes configurações:
 
 
 AVD NAME: Android Emulator
