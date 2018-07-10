@@ -47,7 +47,7 @@ Pré-Requisito para execução dos testes
 2 - Realizar download e instalar o JDK 1.8;
 
 
-3 - Criar a váriável de ambiente JAVA_HOME apontando para o caminho de instalação do JDK, exempo: JAVA_HOME: C:\Program Files\Java\jdk1.8.0_91\bin;
+3 - Criar a váriável de ambiente JAVA_HOME apontando para o caminho de instalação do JDK, exempo: JAVA_HOME: C:\Program Files\Java\jdk1.8.0_171\bin;
 
 
 4 - Realizar Download e instalar o Android SDK;
@@ -71,9 +71,9 @@ Pré-Requisito para execução dos testes
 8.1 Criar o dispostivo virtual do Android com as seguintes configurações
 
 
-AVD NAME: Nexus
+AVD NAME: Android Emulator
 DEVICE: Nexus 4
-TARGET: Android 4.4.2 - API Level 19
+TARGET: Android 4.4.4 - API Level 19
 CPU/ABI:ARM(armeabi-v7a)
 Memory RAM: 2048
 Internal Storage: 512
